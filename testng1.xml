@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="selecting the browser from Testng.xml">
+	<listeners>
+		<listener class-name="com.login.listeners.Listeners" />
+	</listeners>
+	<test name="selecting the browser from Testng.xml">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.login.functionality.LoginWithParametersFromTestNGxml" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
